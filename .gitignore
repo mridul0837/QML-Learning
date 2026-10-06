@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+.virtual_documents/
+
+# Credentials (e.g. IBM Quantum tokens)
+.env
+.env.*
+*.pem
+qiskit-ibm.json
+
+# Outputs / data
+*.log
+.cache/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini

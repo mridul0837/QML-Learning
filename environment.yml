@@ -1,0 +1,22 @@
+# Quantum ML env: PennyLane + Qiskit + PyTorch (CUDA 12.6), verified 2026-10-06 on Windows 10.
+# Recreate:  conda env create -f environment.yml
+# Exact versions of every transitive dependency are in requirements.lock.txt.
+name: quantum
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - pip:
+      - --extra-index-url https://download.pytorch.org/whl/cu126
+      - torch==2.14.1+cu126
+      - pennylane==0.45.1
+      - pennylane-lightning==0.45.0
+      - pennylane-qiskit==0.45.0
+      - qiskit[visualization]==2.3.0
+      - qiskit-aer==0.17.2
+      - qiskit-ibm-runtime==0.45.1
+      - jupyterlab
+      - ipykernel
+      - ipywidgets
+      - scikit-learn
